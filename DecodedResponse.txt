@@ -57,13 +57,13 @@ Buffer 4d 15 00 80 14 00 00 00 09 9a b3 ee 0a 01 00 10 01 10 e1 fe c3 fd f8 ff f
 
 	Payload 01 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 03 00 00 00 00 00 <01 00 41 47 fe f5 03 00 00 00>
 
-	0100 = 100000 | 000 id=32 type=0
-		varint
-		41 47 fe f5 03 = '17011984193' (raw)
+	01 = 00 | 01 id=0 type=1
+		fixed64
+		41 47 fe f5 03 00 00 00 = '17011984193' (raw)
 
-	Payload 01 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 03 00 00 00 00 00 01 00 41 47 fe f5 03 <00 00 00>
+	Payload 01 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 03 00 00 00 00 00 01 00 41 47 fe f5 03 00 00 00<>
 
-	00 = nothing?
+	00 = nothing? (00 entre o byte id e o payload)
 
 	Payload 01 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 03 00 00 00 00 00 01 00 41 47 fe f5 03 00 00 00 <>
 
